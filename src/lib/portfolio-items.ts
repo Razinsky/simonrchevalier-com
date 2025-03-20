@@ -32,7 +32,7 @@ export const portfolioItems = {
     altText: "Career @ Busbud",
     title: "Career @ Busbud",
     tags: "Employer brand, Design, Copywriting, Gatsby",
-    link: "/work/careers-busbud",
+    link: "/work/busbud-careers",
   },
   bopper: {
     imageUrl: ["/images/project-feature-img-bopper.jpg", "/images/project-feature-img-bopper.avif"],
