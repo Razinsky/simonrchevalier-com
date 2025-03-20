@@ -1,4 +1,5 @@
 <script lang="ts">
+  import WorkExperience from "$lib/components/WorkExperience.svelte";
 </script>
 
 <main class="px-container">
@@ -48,7 +49,6 @@
         the power of design. The ability to see problems through multiple lenses is what I consider
         to be the designer's superpower.
       </p>
-      <p class="font-bold">Here is a self-evaluation of my skills across those lenses:</p>
     </section>
     <section class="max-sm:hidden">
       <picture>
@@ -68,6 +68,12 @@
         <source srcset="/images/competency-grid-sm-2.webp" type="image/webp" />
         <img src="/images/competency-grid-sm-2.png" alt="Small Competency Grid - Part 2" />
       </picture>
+    </section>
+    <section class="container-grid gap-y-8">
+      <header>
+        <h3 class="text-fluid-xl font-bold tracking-tight">Work experience</h3>
+      </header>
+      <WorkExperience />
     </section>
   </article>
 </main>
