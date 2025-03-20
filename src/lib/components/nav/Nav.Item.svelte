@@ -4,21 +4,17 @@
   import { page } from "$app/state";
   import type { HTMLAnchorAttributes } from "svelte/elements";
 
-  type Props = HTMLAnchorAttributes & {
-    label: string;
-  };
-
-  const { class: className, href, label, ...restProps }: Props = $props();
+  const { children, class: className, href, ...restProps }: HTMLAnchorAttributes = $props();
 </script>
 
 <a
   {href}
   class={clsx(
-    "relative block px-4 pt-3.5 pb-3 text-center text-base leading-4 font-bold tracking-normal transition-colors delay-100",
+    "relative block pt-2.5 pb-2 text-center text-sm leading-none font-bold tracking-normal transition-colors md:pt-3.5 md:pb-3 md:text-base",
     page.route.id === href && "text-neutral-800",
     className,
   )}
   {...restProps}
 >
-  {label}
+  {@render children?.()}
 </a>

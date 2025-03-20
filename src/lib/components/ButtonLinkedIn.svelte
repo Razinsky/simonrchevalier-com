@@ -1,6 +1,11 @@
+<script lang="ts">
+  import { linkedInProfileUrl } from "$lib/urls";
+</script>
+
 <a
   aria-label="Full CV on LinkedIn"
-  href="https://www.linkedin.com/in/simonrchevalier"
+  href={linkedInProfileUrl}
+  target="_blank"
   class="flex h-10 w-10 items-center justify-center gap-2 rounded-full bg-black/20 hover:bg-black/50"
 >
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
