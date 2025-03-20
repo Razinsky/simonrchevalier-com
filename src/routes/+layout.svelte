@@ -1,5 +1,6 @@
 <script lang="ts">
   import Header from "$lib/components/Header.svelte";
+  import { linkedInProfileUrl, pdfResumeUrl } from "$lib/urls";
   import "../app.css";
   let { children } = $props();
 </script>
@@ -11,6 +12,9 @@
   {@render children()}
   <footer class="p-container flex h-26 items-center justify-between">
     <span class="text-sm">© 2025 Simon R. Chevalier, Product Desginer</span>
-    <a href="/" class="text-sm font-bold">LinkedIn</a>
+    <div class="flex gap-4">
+      <a href={pdfResumeUrl} target="_blank" class="text-sm font-bold">Download CV</a>
+      <a href={linkedInProfileUrl} target="_blank" class="text-sm font-bold">LinkedIn</a>
+    </div>
   </footer>
 </div>
