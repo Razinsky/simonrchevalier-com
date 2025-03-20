@@ -88,6 +88,10 @@
 
 @utility container-grid {
   @apply grid grid-cols-12 md:gap-x-8;
+
+  > * {
+    @apply col-span-full sm:col-start-2 sm:col-end-12;
+  }
 }
 
 @layer components {
@@ -95,7 +99,7 @@
     @apply container-grid;
 
     p {
-      @apply text-fluid-sm col-start-2 col-end-12 mb-6 leading-relaxed text-pretty;
+      @apply text-fluid-sm mb-6 leading-relaxed text-pretty;
 
       &.lead {
         @apply text-fluid-md;
