@@ -1,47 +1,34 @@
 <script lang="ts">
   import type { PortfolioItem } from "$lib/portfolio-items";
-  import type { MouseEventHandler } from "svelte/elements";
 
+  import FollowMouseEffect from "./FollowMouseEffect.svelte";
+
+  let imgElement: HTMLImageElement | null = $state(null);
   let contentRect = $state({} as DOMRectReadOnly);
   let posX = $state(0);
   let posY = $state(0);
-  const wiggleRoom = 40;
-
-  const handleMouseMove: MouseEventHandler<HTMLImageElement> = (e) => {
-    const { width, height } = contentRect;
-
-    const centerX = (width - wiggleRoom * 2) / 2;
-    const centerY = (height - wiggleRoom * 2) / 2;
-
-    posX = (e.offsetX - wiggleRoom - centerX) / centerX;
-    posY = (e.offsetY - wiggleRoom - centerY) / centerY;
-  };
 
   const { title, tags, imageUrl, altText, link }: PortfolioItem = $props();
 </script>
 
-<article
-  class="relative flex flex-col transition-transform duration-300 ease-in-out hover:scale-105"
->
+<article class="relative flex flex-col transition-transform duration-300 ease-in-out">
   <div class="aspect-golden relative overflow-hidden rounded-lg bg-black">
     {#if imageUrl && imageUrl.length > 0}
-      <picture>
-        {#each imageUrl.slice(1) as srcset, i}
-          <source {srcset} />
-        {/each}
-        <img
-          bind:contentRect
-          src={imageUrl[0]}
-          alt={altText}
-          class="absolute -top-10 -left-10 h-[calc(100%+theme(spacing.20))] w-[calc(100%+theme(spacing.20))] max-w-none object-cover transition-transform hover:transition-none"
-          style={`transform: translate(calc(${posX} * -10px), calc(${posY} * -10px))`}
-          onmousemove={handleMouseMove}
-          onmouseleave={() => {
-            posX = 0;
-            posY = 0;
-          }}
-        />
-      </picture>
+      <FollowMouseEffect class="h-full w-full">
+        <picture>
+          {#each imageUrl.slice(1) as srcset, i}
+            <source {srcset} />
+          {/each}
+          <img
+            bind:contentRect
+            bind:this={imgElement}
+            src={imageUrl[0]}
+            alt={altText}
+            class="absolute -top-10 -left-10 h-[calc(100%+theme(spacing.20))] w-[calc(100%+theme(spacing.20))] max-w-none object-cover transition-transform hover:scale-95"
+            style={`transform: translate(calc(${posX} * -10px), calc(${posY} * -10px))`}
+          />
+        </picture>
+      </FollowMouseEffect>
     {/if}
   </div>
   <div class="pt-4">
