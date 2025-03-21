@@ -1,8 +1,10 @@
 <script lang="ts">
+  import { blur } from "svelte/transition";
+
   import WorkExperience from "$lib/components/WorkExperience.svelte";
 </script>
 
-<main class="px-container">
+<main in:blur class="px-container">
   <article class="flex flex-col gap-8 md:gap-16">
     <section
       class="md:shadow-huge relative grid h-auto grid-cols-1 items-center gap-8 overflow-hidden rounded-2xl md:grid-cols-5 md:gap-16"
