@@ -1,5 +1,6 @@
 <script lang="ts">
   import { portfolioItems } from "$lib/portfolio-items";
+  import Header from "../components/Header.svelte";
   const {
     gaia: { altText, imageUrl, title },
   } = portfolioItems;
@@ -7,13 +8,10 @@
 
 <main>
   <article class="px-container container-grid">
-    <header class="col-span-10 col-start-2 mb-8">
-      <h2 class="text-fluid-xl mb-2 font-bold tracking-tight text-balance">
-        {title}
-      </h2>
-      <h3 class="text-fluid-md font-bold opacity-50">Coming soon</h3>
-    </header>
-    <picture class="aspect-golden relative col-span-10 col-start-2 overflow-hidden rounded-lg">
+    <Header {title} comingSoon />
+    <picture
+      class="aspect-golden relative col-span-full overflow-hidden rounded-lg md:col-span-10 md:col-start-2"
+    >
       {#each imageUrl.slice(1) as srcset, i}
         <source {srcset} />
       {/each}
