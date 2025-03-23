@@ -21,7 +21,7 @@
     >
       {#if isWorkPage}
         <li in:scale={{ delay: 250 }}>
-          <NavItem href="/" class="w-48 py-2 md:w-52 md:py-3">
+          <NavItem href="/" class="w-48 py-2 hover:bg-white hover:text-neutral-800 md:w-52 md:py-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -41,10 +41,10 @@
           <NavSelectionMarker />
         {/if}
         <li in:scale={{ delay: 250 }}>
-          <NavItem href="/" class="w-24 md:w-28">Showcase</NavItem>
+          <NavItem href="/" class="w-24 md:w-28" label="Showcase" />
         </li>
         <li in:scale={{ delay: 250 }}>
-          <NavItem href="/about" class="w-24 md:w-28">About</NavItem>
+          <NavItem href="/about" class="w-24 md:w-28" label="About" />
         </li>
       {/if}
     </ul>

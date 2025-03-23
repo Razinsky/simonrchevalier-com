@@ -14,12 +14,12 @@
 <header
   class="col-span-full mb-8 flex flex-col items-start justify-between gap-4 md:col-span-10 md:col-start-2 md:flex-row md:items-center md:gap-8"
 >
-  <div>
-    <h2 class="text-fluid-xl mb-2 font-bold tracking-tight text-balance">
+  <div class="ps-1">
+    <h2 class="text-fluid-xl font-bold tracking-tight text-balance">
       {title}
     </h2>
     {#if comingSoon}
-      <h3 class="text-fluid-md font-bold opacity-50">Coming soon</h3>
+      <h3 class="text-fluid-md font-bold opacity-50">Case study coming soon</h3>
     {/if}
   </div>
   {#if externalLink}

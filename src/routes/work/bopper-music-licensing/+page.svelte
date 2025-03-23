@@ -7,5 +7,5 @@
   } = portfolioItems;
 </script>
 
-<Header {title} {externalLink} externalLinkLabel="View website" comingSoon />
+<Header {title} {externalLink} externalLinkLabel="View web app" comingSoon />
 <HeroImage {imageUrl} {altText} />

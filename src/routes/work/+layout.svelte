@@ -5,7 +5,7 @@
 </script>
 
 <main in:blur>
-  <article class="px-container container-grid">
+  <article class="px-container prose">
     {@render children?.()}
   </article>
 </main>

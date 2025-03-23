@@ -51,6 +51,11 @@
         the power of design. The ability to see problems through multiple lenses is what I consider
         to be the designer's superpower.
       </p>
+      <p>
+        I'm currently head of design at Terra Mobility, a global travel company that specializes in
+        intercity ground transportation connecting millions of commuters to operators in more than
+        90 countries.
+      </p>
     </section>
     <section class="max-sm:hidden">
       <picture>

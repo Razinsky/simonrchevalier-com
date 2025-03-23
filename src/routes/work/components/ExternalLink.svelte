@@ -6,7 +6,7 @@
   href={link}
   target="_blank"
   rel="noopener noreferrer"
-  class="group text-fluid-sm flex shrink-0 items-center justify-between gap-4 rounded-lg bg-neutral-100 px-5 py-4 font-bold text-neutral-900 transition-transform hover:scale-105 hover:bg-black/20 hover:text-neutral-100"
+  class="group text-fluid-sm flex shrink-0 items-center justify-between gap-4 rounded-lg bg-black/20 px-5 py-4 font-bold text-neutral-100 transition-transform hover:scale-105 hover:bg-white hover:text-neutral-800"
 >
   <span class="mt-1">{label}</span>
   <svg
@@ -19,7 +19,7 @@
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="text-neutral-600 group-hover:text-neutral-200"
+    class="text-neutral-200 group-hover:text-neutral-600"
     ><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path
       d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
     /></svg
