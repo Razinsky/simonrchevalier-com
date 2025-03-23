@@ -15,19 +15,21 @@
   <div class="aspect-golden relative overflow-hidden rounded-lg bg-black">
     {#if imageUrl && imageUrl.length > 0}
       <FollowMouseEffect class="h-full w-full">
-        <picture>
-          {#each imageUrl.slice(1) as srcset, i}
-            <source {srcset} />
-          {/each}
-          <img
-            bind:contentRect
-            bind:this={imgElement}
-            src={imageUrl[0]}
-            alt={altText}
-            class="absolute -top-10 -left-10 h-[calc(100%+theme(spacing.20))] w-[calc(100%+theme(spacing.20))] max-w-none object-cover transition-transform hover:scale-95"
-            style={`transform: translate(calc(${posX} * -10px), calc(${posY} * -10px))`}
-          />
-        </picture>
+        <a href={link}>
+          <picture class="relative block h-full w-full">
+            {#each imageUrl.slice(1) as srcset, i}
+              <source {srcset} />
+            {/each}
+            <img
+              bind:contentRect
+              bind:this={imgElement}
+              src={imageUrl[0]}
+              alt={altText}
+              class="absolute -top-10 -left-10 h-[calc(100%+theme(spacing.20))] w-[calc(100%+theme(spacing.20))] max-w-none object-cover transition-transform hover:scale-95"
+              style={`transform: translate(calc(${posX} * -10px), calc(${posY} * -10px))`}
+            />
+          </picture>
+        </a>
       </FollowMouseEffect>
     {/if}
   </div>
