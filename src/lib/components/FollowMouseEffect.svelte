@@ -82,6 +82,6 @@
     .map(([key, value]) => `${key}: ${value};`)
     .join(" ")}
 >
-  <div class="absolute -inset-8"></div>
+  <div class="absolute -inset-8 [&+*]:relative"></div>
   {@render children?.()}
 </div>
