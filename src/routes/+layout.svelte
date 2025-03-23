@@ -10,7 +10,7 @@
 >
   <Header />
   {@render children()}
-  <footer class="p-container flex h-26 items-center justify-between">
+  <footer class="p-container flex h-26 items-center justify-between gap-4">
     <span class="text-sm">© 2025 Simon&nbsp;R.&nbsp;Chevalier</span>
     <div class="flex gap-4">
       <a href={pdfResumeUrl} target="_blank" class="text-sm font-bold">Download CV</a>
