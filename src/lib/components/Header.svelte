@@ -5,7 +5,7 @@
   import NavSelectionMarker from "./nav/Nav.SelectionMarker.svelte";
   import NavItem from "./nav/Nav.Item.svelte";
   import { pdfResumeUrl } from "$lib/urls";
-  import { slide } from "svelte/transition";
+  import { scale } from "svelte/transition";
 
   let navIndex = $derived(page.route.id === "/" ? 0 : page.route.id === "/about" ? 1 : -1);
   let isWorkPage = $derived(page.route.id?.startsWith("/work"));
@@ -20,7 +20,7 @@
       style={`--nav-index: ${navIndex}`}
     >
       {#if isWorkPage}
-        <li in:slide={{ axis: "x" }}>
+        <li in:scale={{ delay: 250 }}>
           <NavItem href="/" class="w-48 py-2 md:w-52 md:py-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +40,12 @@
         {#if navIndex > -1}
           <NavSelectionMarker />
         {/if}
-        <li><NavItem href="/" class="w-24 md:w-28">Showcase</NavItem></li>
-        <li><NavItem href="/about" class="w-24 md:w-28">About</NavItem></li>
+        <li in:scale={{ delay: 250 }}>
+          <NavItem href="/" class="w-24 md:w-28">Showcase</NavItem>
+        </li>
+        <li in:scale={{ delay: 250 }}>
+          <NavItem href="/about" class="w-24 md:w-28">About</NavItem>
+        </li>
       {/if}
     </ul>
   </nav>
