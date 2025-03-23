@@ -6,7 +6,7 @@ export interface ExperienceEntry {
   description?: string;
 }
 
-export const workExperience: ExperienceEntry[] = [
+export const workExperience = [
   {
     company: "Terra Mobility",
     dateRange: "July 2024 — Present",
@@ -71,4 +71,4 @@ export const workExperience: ExperienceEntry[] = [
     title: "Co-founder",
     subtitle: "Award-winning web studio specialized in immersive digital experiences",
   },
-];
+] as const satisfies ExperienceEntry[];

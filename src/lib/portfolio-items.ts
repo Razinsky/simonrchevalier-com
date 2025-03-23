@@ -4,6 +4,7 @@ export interface PortfolioItem {
   title: string;
   tags: string;
   link: string;
+  externalLink?: string;
 }
 
 export const portfolioItems = {
@@ -23,6 +24,7 @@ export const portfolioItems = {
     title: "Busbud.com",
     tags: "Branding, Product Exerience, Design systems",
     link: "/work/busbud",
+    externalLink: "https://www.busbud.com",
   },
   busbudCareers: {
     imageUrl: [
@@ -33,6 +35,7 @@ export const portfolioItems = {
     title: "Career @ Busbud",
     tags: "Employer brand, Design, Copywriting, Gatsby",
     link: "/work/busbud-careers",
+    externalLink: "https://www.busbud.com/en/careers",
   },
   bopper: {
     imageUrl: ["/images/project-feature-img-bopper.jpg", "/images/project-feature-img-bopper.avif"],
@@ -40,6 +43,7 @@ export const portfolioItems = {
     title: "Bopper Music Licensing",
     tags: "Branding, Product Experience, React",
     link: "/work/bopper-music-licensing",
+    externalLink: "https://www.boppermusic.com/browse",
   },
   gaia: {
     imageUrl: ["/images/project-feature-img-gaia.jpg", "/images/project-feature-img-gaia.avif"],
@@ -54,5 +58,6 @@ export const portfolioItems = {
     title: "Vida Verde Eco-Guesthouse",
     tags: "Branding, UI Design, Svelte",
     link: "/work/vida-verde-eco-guesthouse",
+    externalLink: "https://www.vidaverdeguesthouse.com",
   },
-} as const satisfies Record<string, PortfolioItem>;
+} satisfies Record<string, PortfolioItem>;
