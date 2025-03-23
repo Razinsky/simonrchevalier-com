@@ -14,7 +14,7 @@ export const workExperience: ExperienceEntry[] = [
     subtitle:
       "Parent company of Busbud.com and other ground transportation marketplaces and operating systems.",
     description:
-      "After acquiring a portfolio of software, the company needs to streamline its operations by consolidating all these products into a single, powerful solution. My role is to lead the transformation of product design by extending our in-house design system, Horizon.",
+      "After multiple recent acquisitions, the company is streamlining its operations by consolidating products into one single, powerful solution. My role is to lead the transformation of product experience.",
   },
   {
     company: "Busbud",
@@ -29,6 +29,8 @@ export const workExperience: ExperienceEntry[] = [
     dateRange: "July 2019 — July 2020",
     title: "Lead Product Designer",
     subtitle: "The world's largest marketplace for booking intercity bus and train tickets",
+    description:
+      "As lead product designer, I was brought in to orchestrate the redesign of the web app back in 2019. Part of the challenge was to build a design system to support the new design. I also performed a brand audit to better define our purpose and refreshed the logo and branding.",
   },
   {
     company: "PYX4",
