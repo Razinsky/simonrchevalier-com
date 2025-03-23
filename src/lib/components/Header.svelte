@@ -5,8 +5,10 @@
   import NavSelectionMarker from "./nav/Nav.SelectionMarker.svelte";
   import NavItem from "./nav/Nav.Item.svelte";
   import { pdfResumeUrl } from "$lib/urls";
+  import { slide } from "svelte/transition";
 
   let navIndex = $derived(page.route.id === "/" ? 0 : page.route.id === "/about" ? 1 : -1);
+  let isWorkPage = $derived(page.route.id?.startsWith("/work"));
 </script>
 
 <header class="px-container grid h-26 w-full grid-cols-4 items-center justify-between">
@@ -17,11 +19,30 @@
       class="relative inline-flex items-center overflow-hidden rounded-full bg-black/20"
       style={`--nav-index: ${navIndex}`}
     >
-      {#if navIndex > -1}
-        <NavSelectionMarker />
+      {#if isWorkPage}
+        <li in:slide={{ axis: "x" }}>
+          <NavItem href="/" class="w-48 py-2 md:w-52 md:py-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg
+            ><span class="pt-0.5">Back to showcase</span>
+          </NavItem>
+        </li>
+      {:else}
+        {#if navIndex > -1}
+          <NavSelectionMarker />
+        {/if}
+        <li><NavItem href="/" class="w-24 md:w-28">Showcase</NavItem></li>
+        <li><NavItem href="/about" class="w-24 md:w-28">About</NavItem></li>
       {/if}
-      <li><NavItem href="/" class="w-24 md:w-28">Showcase</NavItem></li>
-      <li><NavItem href="/about" class="w-24 md:w-28">About</NavItem></li>
     </ul>
   </nav>
 
