@@ -99,8 +99,10 @@
     @apply container-grid;
 
     p {
-      @apply text-fluid-sm mb-6 leading-relaxed text-pretty;
-
+      @apply text-fluid-sm leading-relaxed text-pretty;
+      &:not(:last-child) {
+        @apply mb-6;
+      }
       &.lead {
         @apply text-fluid-md;
       }

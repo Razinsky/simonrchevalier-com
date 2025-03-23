@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="min-h-[screen] w-full bg-[linear-gradient(316deg,#3A3340_0%,#323442_20%,#2A3542_40%,#223640_60%,#1D363C_80%,#1C3636_100%)] *:not-last:mb-10 md:*:not-last:mb-20"
+  class="min-h-dvh w-full bg-[linear-gradient(316deg,#3A3340_0%,#323442_20%,#2A3542_40%,#223640_60%,#1D363C_80%,#1C3636_100%)] *:not-last:mb-10 md:*:not-last:mb-20"
 >
   <Header />
   {@render children()}
