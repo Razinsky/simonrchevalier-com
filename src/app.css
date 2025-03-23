@@ -107,6 +107,10 @@
         @apply text-fluid-md;
       }
     }
+
+    a {
+      @apply underline underline-offset-4;
+    }
   }
 }
 

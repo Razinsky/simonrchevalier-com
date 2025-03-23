@@ -29,8 +29,10 @@
         an award-winning web studio and created numerous digital products for enterprises and
         consumers. With an entrepreneurial mindset, I am driven by the challenge of solving complex
         problems, intrigued by the workings of the human mind, and passionate about design and
-        coding. My wife and I live on the northwest Pacific coast of Costa Rica, where we own a
-        guesthouse and welcome guests worldwide.
+        coding. My wife and I live on the northwest Pacific coast of Costa Rica, where we own <a
+          href="https://www.vidaverdeguesthouse.com"
+          target="_blank">a guesthouse</a
+        > and welcome guests worldwide.
       </p>
       <p>
         In 2006, I started my career as an entrepreneur. It was the golden age of Flash and
