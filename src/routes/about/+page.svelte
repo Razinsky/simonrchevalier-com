@@ -37,16 +37,15 @@
       <p>
         In 2006, I started my career as an entrepreneur. It was the golden age of Flash and
         immersive experiences. Inspired by the works of bleeding-edge studios like 2advanced,
-        Fantasy Interactive, and others, my co-founder and I started our studio, Ok!nteractive. So,
-        right out of the gate, I was called to do everything, everywhere, all at once. And boy, did
-        I love it.
+        Fantasy Interactive, and others, my co-founder and I started our studio, Ok!nteractive that
+        won multiple awards and accolades for our work.
       </p>
       <p>
-        A couple of years later, as I looked at expanding my designer's horizons and working more
-        closely with brands, we merged the studio with a local branding agency, where I oversaw
-        interactive media for a while until I had the opportunity to join a startup. That's when
-        everything clicked for me. The craft involved in building a product, its brand, reputation,
-        etc., became much more fulfilling for me.
+        As I was looking at expanding my designer's horizons and working more closely on brands, we
+        merged the studio with a local branding agency, where I oversaw interactive media for a
+        while until I had the opportunity to join a startup. That's when everything clicked for me.
+        The craft involved in building a product, its brand, reputation, etc., became much more
+        fulfilling for me.
       </p>
       <p>
         Throughout my journey at the intersection of art, technology, and business, I've witnessed
