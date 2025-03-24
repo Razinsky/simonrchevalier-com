@@ -98,21 +98,21 @@
   .prose {
     @apply container-grid;
 
-    :not(.no-prose) {
-      p {
-        @apply text-fluid-sm leading-relaxed text-pretty;
-        &:not(:last-child) {
-          @apply mb-6;
-        }
-        &.lead {
-          @apply text-fluid-md;
-        }
+    /* :not(.no-prose) { */
+    p {
+      @apply text-fluid-sm leading-relaxed text-pretty;
+      &:not(:last-child) {
+        @apply mb-6;
       }
-
-      a {
-        @apply underline underline-offset-4;
+      &.lead {
+        @apply text-fluid-md;
       }
     }
+
+    a {
+      @apply underline underline-offset-4;
+    }
+    /* } */
   }
 }
 
