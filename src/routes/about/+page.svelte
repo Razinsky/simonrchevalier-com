@@ -4,6 +4,10 @@
   import WorkExperience from "$lib/components/WorkExperience.svelte";
 </script>
 
+<svelte:head>
+  <title>About Simon R.Chevalier — Product designer</title>
+</svelte:head>
+
 <main in:blur class="px-container">
   <article class="flex flex-col gap-8 md:gap-16">
     <section
