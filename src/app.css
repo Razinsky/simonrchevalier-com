@@ -98,7 +98,6 @@
   .prose {
     @apply container-grid;
 
-    /* :not(.no-prose) { */
     p {
       @apply text-fluid-sm leading-relaxed text-pretty;
       &:not(:last-child) {
@@ -112,7 +111,6 @@
     a {
       @apply underline underline-offset-4;
     }
-    /* } */
   }
 }
 
