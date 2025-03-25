@@ -12,7 +12,7 @@
 </script>
 
 <header
-  class="no-prose col-span-full mb-8 flex flex-col items-start justify-between gap-4 md:col-span-10 md:col-start-2 md:flex-row md:items-center md:gap-8"
+  class="mb-8 flex flex-col items-start justify-between gap-4 md:col-span-10 md:col-start-2 md:flex-row md:items-center md:gap-8"
 >
   <div class="ps-1">
     <h2 class="text-fluid-xl font-bold tracking-tight text-balance">

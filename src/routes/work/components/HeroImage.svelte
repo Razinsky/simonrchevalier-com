@@ -6,11 +6,9 @@
   const { imageUrl, altText }: Props = $props();
 </script>
 
-<picture
-  class="aspect-golden relative col-span-full overflow-hidden rounded-lg md:col-span-10 md:col-start-2"
->
+<picture class="relative block aspect-[21/9] overflow-hidden rounded-lg">
   {#each imageUrl.slice(1) as srcset, i}
     <source {srcset} />
   {/each}
-  <img src={imageUrl[0]} alt={altText} class="absolute object-cover" />
+  <img src={imageUrl[0]} alt={altText} class="absolute h-full w-full object-cover" />
 </picture>

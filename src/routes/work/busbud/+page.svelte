@@ -1,5 +1,6 @@
 <script lang="ts">
   import { portfolioItems } from "$lib/portfolio-items";
+  import Content from "../components/Content.svelte";
   import Header from "../components/Header.svelte";
   import HeroImage from "../components/HeroImage.svelte";
   import SEO from "../components/SEO.svelte";
@@ -12,7 +13,7 @@
 <SEO {title} />
 <Header {title} {externalLink} externalLinkLabel="View website" comingSoon />
 <HeroImage {imageUrl} {altText} />
-<section class="mt-10">
+<Content>
   <p class="lead">
     Busbud.com is a world-leading marketplace for intercity ground transportation. Think the largest
     bus and train station in the world where millions of people come to buy their tickets.
@@ -22,4 +23,4 @@
     sells bus, train, ferry and shuttle tickets from thousands of operators in more than 90
     countries.
   </p>
-</section>
+</Content>

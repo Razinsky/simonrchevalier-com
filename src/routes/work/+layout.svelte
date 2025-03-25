@@ -4,8 +4,8 @@
   let { children } = $props();
 </script>
 
-<main in:blur class="grow">
-  <article class="px-container prose">
+<main in:blur>
+  <article class="px-container">
     {@render children?.()}
   </article>
 </main>

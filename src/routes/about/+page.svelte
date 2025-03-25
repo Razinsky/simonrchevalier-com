@@ -29,8 +29,8 @@
     </section>
     <section class="prose">
       <p class="lead">
-        I am a passionate 41-year-old product designer. In a twenty-or-so-year career, I co-founded
-        an award-winning web studio and created numerous digital products for enterprises and
+        I am a passionate 41-year-old product designer. In a 20-year career, I co-founded an
+        award-winning web studio and created numerous digital products for enterprises and
         consumers. With an entrepreneurial mindset, I am driven by the challenge of solving complex
         problems, intrigued by the workings of the human mind, and passionate about design and
         coding. My wife and I live on the northwest Pacific coast of Costa Rica, where we own <a

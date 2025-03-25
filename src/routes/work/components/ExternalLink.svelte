@@ -6,7 +6,7 @@
   href={link}
   target="_blank"
   rel="noopener noreferrer"
-  class="group text-fluid-sm flex shrink-0 items-center justify-between gap-4 rounded-lg bg-black/20 px-5 py-4 font-bold text-neutral-100 no-underline transition-transform hover:scale-105 hover:bg-white hover:text-neutral-800"
+  class="group text-fluid-sm flex shrink-0 items-center justify-between gap-4 rounded-lg bg-black/20 px-5 py-4 font-bold text-neutral-100 transition-transform hover:scale-105 hover:bg-white hover:text-neutral-800"
 >
   <span class="mt-0.5">{label}</span>
   <svg
