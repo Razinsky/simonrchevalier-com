@@ -19,7 +19,7 @@
       {title}
     </h2>
     {#if comingSoon}
-      <h3 class="text-fluid-md font-bold opacity-50">Case study coming soon</h3>
+      <p class="text-fluid-sm font-bold opacity-50">Full case study in progress</p>
     {/if}
   </div>
   {#if externalLink}

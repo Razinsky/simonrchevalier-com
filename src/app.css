@@ -100,9 +100,7 @@
 
     p {
       @apply text-fluid-sm leading-relaxed text-pretty;
-      &:not(:last-child) {
-        @apply mb-6;
-      }
+
       &.lead {
         @apply text-fluid-md;
       }
@@ -110,6 +108,10 @@
 
     a {
       @apply underline underline-offset-4;
+    }
+
+    > * + * {
+      @apply mt-6;
     }
   }
 }
